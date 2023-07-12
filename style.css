@@ -1,0 +1,272 @@
+.Head{
+    border : 1px solid black;
+    height: 75px;
+    width: 100px;
+    background-color:rgb(223, 23, 56);
+    position: absolute;
+    top: 150px;
+    left: 80px;
+    border-radius: 50px 50px 0px 0px;
+    overflow: hidden;
+    
+}
+.Reye{
+    
+    height: 10px;
+    width: 10px;
+    background-color:white;
+    border-radius: 100%;
+    position:absolute;
+    top: 45px;
+    left: 66px;
+    overflow: hidden;
+}
+.leye{
+    height: 10px;
+    width: 10px;
+    background-color:white;
+    border-radius: 100%;
+    position:absolute;
+    top: 45px;
+    left: 20px;
+    overflow: hidden;
+}
+.Rhand{
+    border : 1px solid black;
+    height: 60px;
+    width: 15px;
+    background-color:rgb(223, 23, 56);
+    border-radius: 60px 60px 60px 60px;
+    position:absolute;
+    top: 250px;
+    left: 60px;
+    overflow: hidden;
+}
+.stromach{
+    border : 1px solid black;
+    height: 100px;
+    width: 100px;
+    background-color:rgb(223, 23, 56);
+    border-radius: 0px 0px 35px 35px;
+    position:absolute;
+    top: 230px;
+    left: 80px;
+    overflow: hidden;
+    transition: border-radius 1s;
+    
+}
+
+.Lhand{
+    border : 1px solid black;
+    height: 60px;
+    width: 15px;
+    background-color:rgb(223, 23, 56);
+    border-radius: 60px 60px 60px 60px;
+    position:absolute;
+    top: 250px;
+    left: 185px;
+    overflow: hidden;
+}
+.Rleg{
+    border : 1px solid black;
+    height: 60px;
+    width: 15px;
+    background-color:rgb(223, 23, 56);
+    border-radius: 60px 60px 60px 60px;
+    position:absolute;
+    top: 304px;
+    left: 145px;
+    overflow: hidden;
+    z-index: -1;
+
+}
+.Lleg{
+    border : 1px solid black;
+    height: 60px;
+    width: 15px;
+    background-color:rgb(223, 23, 56);
+    border-radius: 60px 60px 60px 60px;
+    position:absolute;
+    top: 304px;
+    left: 100px;
+    overflow: hidden;
+    z-index: -1;
+}
+.Lantenna{
+    border : 1px solid black;
+    height: 50px;
+    width: 15px;
+    background-color: rgb(223, 23, 56);
+    border-radius: 60px 60px 0px 0px;
+    position: absolute;
+    top: 114px;
+    left: 82px;
+    rotate: -30deg;
+}
+.Rantenna{
+    border : 1px solid black;
+    height: 50px;
+    width: 15px;
+    background-color:rgb(223, 23, 56) ;
+    border-radius: 60px 60px 0px 0px;
+    position: absolute;
+    top: 114px;
+    left: 160px;
+    rotate: 30deg;
+}
+/* .Robot:hover{
+    position: absolute;
+    left: 250px;
+    top: -80px;
+    animation: fly 6s infinite;
+} */
+.Head:hover{
+    background-color: rgb(76, 26, 214);
+    animation: Head 2s infinite ;
+}
+@keyframes  Head  {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(35deg);
+    }
+    50%{
+        transform:rotate(0deg);
+    }
+    75%{
+        transform: rotate(-35deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.Lhand:hover{
+    animation: Lhand 2s infinite;
+}
+@keyframes Lhand {
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top;
+    }
+    50%{
+        transform: rotate(90deg);
+        transform-origin: top;
+    }
+
+}
+.Rhand:hover{
+    animation: Rhand 2s infinite;
+}
+ @keyframes Rhand {
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top;
+    }
+    50%{
+        transform:rotate(-90deg) ;
+        transform-origin: top; 
+    }
+ }
+.Lleg:hover{
+    animation: Lleg 1s infinite;
+}
+
+@keyframes Lleg {
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top;
+    }
+    50%{
+        transform:rotate(-90deg) ;
+        transform-origin: top; 
+    }    
+    70%{
+        transform: rotate(0deg);
+        transform-origin: top;
+    }
+    100%{
+        transform: rotate(0deg);
+        transform-origin: top;
+    }
+}
+.Rleg:hover{
+    animation: Rleg 1s infinite;
+}
+
+@keyframes Rleg {
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top;
+    }
+    50%{
+        transform:rotate(0deg) ;
+        transform-origin: top; 
+    }    
+    70%{
+        transform: rotate(90deg);
+        transform-origin: top;
+    }
+    100%{
+        transform: rotate(0deg);
+        transform-origin: top;
+    }
+}
+.stromach:hover{
+    background-color: purple;
+    border-radius: 40%;
+    animation: stromach 2s infinite;
+
+}
+@keyframes stromach {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+/* }
+.Robot:hover .stromach {
+    animation: movetorso 2s infinite;
+}
+  
+.Robot:hover .Lhand {
+    animation: moveleftarm 2s infinite;
+}
+  
+.Robot:hover .Rhand{
+    animation: moverightarm 2s infinite;
+}
+  
+.Robot:hover .Lleg {
+    animation: moveleftleg 2s infinite;
+}
+  
+.Robot:hover .Rleg {
+    animation: moverightleg 2s infinite;
+}*/
+
+.Robot{
+    border: 1px solid black;
+    height: 370px;
+    width: 250px;
+    top: 50px;
+    left: 350px;
+    position: absolute;  
+    animation: Robot 2s infinite;
+} 
+@keyframes Robot {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(60deg);
+    }
+    75%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
